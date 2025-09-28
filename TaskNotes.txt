@@ -1,0 +1,74 @@
+Task Note – Foundation & Environment Setup
+Objective
+
+Build fundamentals in cybersecurity, networking, cryptography, and set up a professional hacking lab.
+
+1. Cybersecurity Basics
+
+Learn CIA Triad: Confidentiality, Integrity, Availability.
+
+Explore Threat Types: phishing, malware, DoS/DDoS, SQLi, brute force, ransomware.
+
+Study Attack Vectors: social engineering, wireless attacks, insider threats.
+
+Deliverable: Short notes on CIA Triad and 2–3 examples of real-world attacks.
+
+2. Lab Environment Setup
+
+Install VirtualBox/VMware.
+
+Install Kali Linux as attacker machine.
+
+Install Metasploitable2 or DVWA as target machine.
+
+Configure private lab network (Host-Only Adapter).
+
+Deliverable: Screenshot of running Kali + target VM on same network.
+
+3. Linux Fundamentals
+
+File navigation (cd, ls, pwd).
+
+File/Directory permissions (chmod, chown).
+
+Package management (apt, dpkg).
+
+Networking commands (ifconfig, ping, netstat, traceroute).
+
+Deliverable: Linux command cheat sheet (custom notes).
+
+4. Networking Basics
+
+OSI model layers & functions.
+
+TCP/IP protocol suite.
+
+DNS & HTTP/HTTPS (deep dive).
+
+IP addressing, subnetting, NAT.
+
+Deliverable: Short summary of OSI + TCP/IP mapping.
+
+5. Cryptography Basics
+
+Symmetric vs Asymmetric encryption.
+
+Hashing (MD5, SHA256).
+
+Digital certificates & SSL/TLS.
+
+Hands-on: Encrypt/Decrypt messages using OpenSSL.
+
+Deliverable: Screenshot of OpenSSL encryption/decryption.
+
+6. Tool Familiarization
+
+Wireshark (packet capture).
+
+Nmap (network scanning).
+
+Netcat (network debugging).
+
+Metasploit basics.
+
+Deliverable: Capture log from Wireshark and output of Nmap scan.
