@@ -1,0 +1,90 @@
+Linux Command Cheat Sheet
+
+
+File & Directory Basics
+
+pwd # print working dir
+ls # list files
+ls -l # list with details
+ls -a # show hidden files
+cd <dir> # change directory
+cd .. # go up one level
+cd ~ # home directory
+mkdir <dir> # make a directory
+rmdir <dir> # remove empty dir
+
+File Operations
+
+touch file.txt # create empty file
+cat file.txt # show file contents
+less file.txt # view file (scrollable)
+head -n 10 file.txt # first 10 lines
+tail -n 10 file.txt # last 10 lines
+cp src dest # copy file/dir
+mv src dest # move/rename
+rm file.txt # remove file
+rm -rf dir/ # remove directory recursively
+
+Finding Stuff
+
+find . -name "*.txt" # find all txt files here & below
+grep "word" file.txt # search for word in file
+grep -r "word" . # search recursively
+which <cmd> # where command is installed
+
+Permissions
+
+ls -l # see permissions
+chmod +x script.sh # make executable
+chmod 644 file.txt # owner rw, group/others r
+chown user:group file # change ownership
+
+Package Managers
+
+apt update && apt upgrade # Debian/Ubuntu update & upgrade
+apt install <pkg> # install package
+yum install <pkg> # RHEL/CentOS
+dnf install <pkg> # Fedora/CentOS
+pacman -S <pkg> # Arch Linux
+
+System Info
+
+uname -a # kernel + system info
+whoami # current user
+id # user + group IDs
+df -h # disk usage
+du -sh * # size of files/dirs
+top # running processes
+htop # nicer top (needs install)
+free -h # memory usage
+uptime # system uptime
+
+Processes
+
+ps aux # list processes
+kill <pid> # kill process by pid
+kill -9 <pid> # force kill
+pkill firefox # kill process by name
+jobs # background jobs
+fg %1 # bring job to foreground
+bg %1 # send job to background
+
+Networking
+
+ping google.com # check connectivity
+curl http://site.com # fetch webpage
+wget http://file.com # download file
+ifconfig / ip addr # show IPs
+netstat -tulnp # show open ports (old)
+ss -tulnp # show sockets (new)
+scp file user@host:/path # copy over SSH
+ssh user@host # remote login
+
+Miscellaneous
+
+history # command history
+!! # repeat last command
+!123 # run command from history
+clear # clear terminal
+alias ll='ls -la' # make shortcut
+man <cmd> # manual page
